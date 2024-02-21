@@ -1,0 +1,159 @@
+@charset "UTF-8";
+body {
+	width:100%;
+	padding:0px;
+	margin:0px; 
+	color: white;
+	background-color: #FF6200;
+	text-decoration: none !important;
+}
+.header{
+	display:block;
+	background-color: #FF6200;
+	text-align: center;
+	font-family: 'Georgia';;
+
+}
+.img_1{
+	
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.ct_head{
+	overflow:hidden;
+	background-color: #FF6200;
+	box-shadow: 4px 4px 4px 0px rgba(0,0,0,.2);
+	margin:0px;
+	padding:0px 10px;
+	
+}
+.header_right a{
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family:'Brush Script MT';;
+}
+
+.header_right a:hover {
+  background-color: #DB5400;
+  color: ghostwhite;
+}
+
+.header_right a.active {
+  background-color: #FF6200;
+  color: white;
+	
+}
+.welcome_block{
+	display:block;
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+}
+
+
+#welcome{
+	text-align: center;
+}
+.row {
+  display: flex;
+  font-family: 'Georgia';
+}
+.content {
+  flex: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ad{
+	display:block;
+	width:80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	background-color: #F78400;
+}
+#jpg{
+	width: 10%;
+}
+.name{
+	text-align: center;
+	
+}
+#abc{
+	display:block;
+	width:60%;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+#info_block{
+	display:block;
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+table{
+	width: 80%;
+}
+table, th, td {
+	border: 1px solid;
+	border-collapse: collapse;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+td{
+	background-color: #FF7200;
+}
+th{
+	background-color: #FF9210;
+}
+thead:hover {
+  background-color: #DB5400;
+  color: ghostwhite;
+}
+footer{
+	display:block;
+	
+	text-align: center;
+	box-shadow: 0px -4px 4px 0px rgba(0,0,0,.2);
+	font-family: 'Georgia';
+	color:white;
+	text-decoration: none;
+}
+.last{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.png2{
+	width:80%;
+	padding: 0px 40px;
+}
+.word{
+	text-align: center;
+}
+#kk{
+	width:60%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.aaa{
+	background-color: #FF9210;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bolder;
+}
+h2,h4{
+	padding: 0px 20px;
+}

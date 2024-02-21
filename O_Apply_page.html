@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="apply.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="../Image/logo.png" width="400" height="100" class="img_1">
+        <h1>Hong Kong Industrial University</h1>
+    </div>
+    <div class="ct_head">
+        <div class="header_right">
+            <a href="O_Welcome_page.html">Home</a>
+            <a href="O_About.html">About</a>
+            <a href="O_Apply_page.html">Apply</a>
+            <a href="O_Visit_page.html">Visit</a>
+            <a href="O_Program_page.html">Program</a>
+            <a href="O_Contact_page.html">Contact</a>
+        </div>
+    </div>
+
+    <div id="welcome-block">
+        <p>Welcome to HKIU</p>
+    </div>
+
+    <div class="college-application-container">
+        <h3>Common Application to Undergraduate Program</h3>
+        <div class="college-button-container">
+            <button class="college-button" id="eng-button">College of Engineering</button>
+            <button class="college-button" id="sci-button">College of Science</button>
+            <button class="college-button" id="int-button">College of Interdisciplinary Studies</button>
+        </div>
+    </div>
+
+    <div class="major-form" id="eng-majors">
+        <div class="course-container" id="cs">
+            <img src="../Image/cs.png" width="200" height="200">
+            <label for="cs">BSc in Computer Science and Technology</label>
+            <input type="text" id="cs-input">
+            <button type="submit"
+                onclick="printInput('cs', 'College of Engineering', 'BSc in Computer Science and Technology')">Rank of
+                choice</button>
+        </div>
+        <div class="course-container" id="ei">
+            <img src="../Image/ei.png" width="200" height="200">
+            <label for="ei">BSc in Electronics and Information Technology</label>
+            <input type="text" id="ei-input">
+            <button type="submit"
+                onclick="printInput('ei', 'College of Engineering', 'BSc in Electronics and Information Technology')">Rank
+                of
+                choice</button>
+        </div>
+
+        <div class="course-container" id="mse">
+            <img src="../Image/mse.png" width="200" height="200">
+            <label for="mse">BSc in Materials Science and Engineering</label>
+            <input type="text" id="mse-input">
+            <button type="submit"
+                onclick="printInput('mse', 'College of Engineering', 'BSc in Materials Science and Engineering')">Rank
+                of
+                choice</button>
+        </div>
+
+        <div class="course-container" id="est">
+            <img src="../Image/est.png" width="200" height="200">
+            <label for="est">BSc in Electronic Science and Technology</label>
+            <input type="text" id="est-input">
+            <button type="submit"
+                onclick="printInput('est', 'College of Engineering', 'BSc in Electronic Science and Technology')">Rank
+                of
+                choice</button>
+        </div>
+
+        <div class="course-container" id="cst">
+            <img src="../Image/mc.png" width="200" height="200">
+            <label for="cst">BEng in Materials and Chemicals</label>
+            <input type="integer" id="cst-input" name="College of Engineering">
+            <button type="submit"
+                onclick="printInput('cst', 'College of Engineering', 'BEng in Materials and Chemicals')">Rank
+                of choice</button>
+        </div>
+    </div>
+
+    <div class="major-form" id="sci-majors">
+        <div class="course-container" id="phy">
+            <img src="../Image/phy.png" width="200" height="200">
+            <label for="phy">BSc in Physics</label>
+            <input type="text" id="phy-input">
+            <button type="submit" onclick="printInput('phy', 'College of Science', 'BSc in Physics')">Rank of
+                choice</button>
+        </div>
+
+        <div class="course-container" id="chem">
+            <img src="../Image/chem.png" width="200" height="200">
+            <label for="chem">BSc in Chemistry</label>
+            <input type="text" id="chem-input">
+            <button type="submit" onclick="printInput('chem', 'College of Science', 'BSc in Chemistry')">Rank of
+                choice</button>
+        </div>
+
+        <div class="course-container" id="bio">
+            <img src="../Image/bio.png" width="200" height="200">
+            <label for="bio">BSc in Biology</label>
+            <input type="text" id="bio-input">
+            <button type="submit" onclick="printInput('bio', 'College of Science', 'BSc in Biology')">Rank of
+                choice</button>
+        </div>
+    </div>
+
+    <div class="major-form" id="int-majors">
+        <div class="course-container" id="cogs">
+            <img src="../Image/cogs.png" width="200" height="200">
+            <label for="cogs">BEng in Cognitive Science</label>
+            <input type="text" id="cogs-input">
+            <button type="submit"
+                onclick="printInput('cogs', 'College of Interdisciplinary Studies', 'BEng in Cognitive Science')">Rank
+                of
+                choice</button>
+        </div>
+
+        <div class="course-container" id="be">
+            <img src="../Image/be.png" width="200" height="200">
+            <label for="be">BEng in Biomedical Engineering</label>
+            <input type="text" id="be-input">
+            <button type="submit"
+                onclick="printInput('be', 'College of Interdisciplinary Studies', 'BEng in Biomedical Engineering')">Rank
+                of
+                choice</button>
+        </div>
+
+        <div class="course-container" id="bm">
+            <img src="../Image/bm.png" width="200" height="200">
+            <label for="bm">BSc in Biology and Medicine</label>
+            <input type="text" id="bm-input">
+            <button type="submit"
+                onclick="printInput('bm', 'College of Interdisciplinary Studies', 'BSc in Biology and Medicine')">Rank
+                of
+                choice</button>
+        </div>
+
+    </div>
+
+
+</body>
+<div id="result-block">
+    <h2>Your chosen majors:</h2>
+    <h3 class="last-changed-time"></h3>
+    <table class="ta">
+        <tr>
+            <th>Collage</th>
+            <th>Major</th>
+            <th>Rank</th>
+        </tr>
+        <tr class="tr1">
+            <td></td>
+            <td></td>
+            <td>1</td>
+        </tr>
+        <tr class="tr2">
+            <td></td>
+            <td></td>
+            <td>2</td>
+        </tr>
+        <tr class="tr3">
+            <td></td>
+            <td></td>
+            <td>3</td>
+        </tr>
+        <tr class="tr4">
+            <td></td>
+            <td></td>
+            <td>4</td>
+        </tr>
+        <tr class="tr5">
+            <td></td>
+            <td></td>
+            <td>5</td>
+        </tr>
+        <tr class="tr6">
+            <td></td>
+            <td></td>
+            <td>6</td>
+        </tr>
+        <tr class="tr7">
+            <td></td>
+            <td></td>
+            <td>7</td>
+        </tr>
+        <tr class="tr8">
+            <td></td>
+            <td></td>
+            <td>8</td>
+        </tr>
+        <tr class="tr9">
+            <td></td>
+            <td></td>
+            <td>9</td>
+        </tr>
+        <tr class="tr10">
+            <td></td>
+            <td></td>
+            <td>10</td>
+        </tr>
+    </table>
+    <h3 class="total-number-choices"></h3>
+    <button onclick="submit()" type="submit">submit</button>
+    <button onclick="reset()" type="reset">clear</button>
+    <h3 class="submit-msg"></h3>
+</div>
+
+<footer>
+    <img src="../Image/footer_logo.png" width="300" height="100">
+    <p>© CityU 2023 sources of images and text from Wikipedia Commons and Courtesy of Icon pack by Icons8 -- designed by
+        <a href="O_design_page.html">LawYukMan</a>
+    </p>
+</footer>
+
+<script>
+    let numOfChoices = 0;
+    updateNumOfChoice();
+    const engButton = document.getElementById('eng-button');
+    const sciButton = document.getElementById('sci-button');
+    const intButton = document.getElementById('int-button');
+
+    const engForm = document.getElementById('eng-majors');
+    const sciForm = document.getElementById('sci-majors');
+    const intForm = document.getElementById('int-majors');
+
+    const buttons = document.querySelectorAll('.college-button');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            buttons.forEach(btn => {
+                if (btn === button) {
+                    btn.classList.add('clicked');
+                } else {
+                    btn.classList.remove('clicked');
+                }
+            });
+        });
+    });
+
+    // Function to handle button click events
+    function handleButtonClick(formToShow) {
+        // Hide all major-form elements
+        engForm.style.display = 'none';
+        sciForm.style.display = 'none';
+        intForm.style.display = 'none';
+
+
+
+        // Show the selected major-form element
+        formToShow.style.display = 'block';
+    }
+
+    function isInteger(value) {
+        // Remove leading and trailing whitespace
+        value = value.trim();
+
+        // Check if the value is a valid integer
+        return /^\d+$/.test(value);
+    }
+
+    function getPrintRank(rank) {
+        if (rank == 1) {
+            return "1st";
+        } else if (rank == 2) {
+            return "2nd";
+        } else if (rank == 3) {
+            return "3rd";
+        } else {
+            return `${rank}th`;
+        }
+    }
+
+    function printInput(elementId, college, major) {
+        const inputElement = document.getElementById(elementId + '-input');
+        const inputValue = inputElement.value;
+        if (!isInteger(inputValue)) {
+            alert("Please enter the rank of chosen major");
+            return;
+        }
+        if (!(1 <= Number(inputValue) <= 10)) {
+            alert("Please enter the rank of chosen between 1 and 10");
+            return;
+        }
+        const tableRows = document.querySelectorAll(".ta tr");
+
+        for (let i = 0; i < tableRows.length; i++) {
+            const rankCell = tableRows[i].querySelector("td:last-child");
+            let rank;
+            if (rankCell) {
+                rank = rankCell.textContent;
+                const collegeCell = tableRows[i].querySelector("td:first-child");
+                const majorCell = tableRows[i].querySelector("td:nth-child(2)");
+                if (majorCell.textContent == major && collegeCell.textContent == college) {
+                    alert("You have already chosen this major");
+                    return;
+                }
+                if (rank == inputValue) {
+                    if (majorCell.textContent.length > 0) {
+                        alert("You have already chosen this rank");
+                        return;
+                    }
+                }
+            }
+        }
+
+        for (let i = 0; i < tableRows.length; i++) {
+            const rankCell = tableRows[i].querySelector("td:last-child");
+            let rank;
+            if (rankCell) {
+                rank = rankCell.textContent;
+            }
+            if (rank == inputValue) {
+                const collegeCell = tableRows[i].querySelector("td:first-child");
+                const majorCell = tableRows[i].querySelector("td:nth-child(2)");
+                majorCell.textContent = major;
+                collegeCell.textContent = college;
+                numOfChoices += 1;
+                updateNumOfChoice();
+                alert(`You have chosen ${major} as your ${getPrintRank(rank)} chosen major in ${college} successful`);
+                return;
+            }
+        };
+    }
+
+    function updateNumOfChoice() {
+        const lastChangedTimeElement = document.querySelector('.last-changed-time');
+        const currentDate = new Date();
+        const options = {
+            year: 'numeric',
+            month: 'numeric',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: false,
+        };
+
+        // Format the current date and time
+        const formattedDate = currentDate.toLocaleString(undefined, options);;
+        lastChangedTimeElement.textContent = `Last changed time: ${formattedDate}`;
+        const totalNumberChoicesElement = document.querySelector('.total-number-choices');
+        totalNumberChoicesElement.textContent = `Total Number of Major Applied: ${numOfChoices}`;
+    }
+
+    function reset() {
+        const tableRows = document.querySelectorAll(".ta tr");
+
+        tableRows.forEach(row => {
+            const rankCell = row.querySelector("td:last-child");
+            if (rankCell) {
+                const collegeCell = row.querySelector("td:first-child");
+                const majorCell = row.querySelector("td:nth-child(2)");
+                collegeCell.textContent = "";
+                majorCell.textContent = "";
+            }
+        });
+        numOfChoices = 0;
+        updateNumOfChoice();
+    }
+
+    function submit() {
+        const lastChangedTimeElement = document.querySelector('.submit-msg');
+        if (numOfChoices == 0) {
+            alert("You have not chosen any chosen.");
+            return;
+        }
+
+        let hasGap = false;
+        let gapNum = 0;
+        let count = 0;
+
+        const tableRows = document.querySelectorAll(".ta tr");
+
+        for (let i = 0; i < tableRows.length; i++) {
+            const rankCell = tableRows[i].querySelector("td:last-child");
+            if (rankCell) {
+                const collegeCell = tableRows[i].querySelector("td:first-child");
+                const majorCell = tableRows[i].querySelector("td:nth-child(2)");
+                if (!collegeCell.textContent) {
+                    gapNum = rankCell.textContent;
+                    hasGap = true;
+                    break;
+                }
+                count++;
+                if(count == numOfChoices){
+                    break
+                }
+            }
+        }
+
+        if (hasGap) {
+            lastChangedTimeElement.textContent = "You have not chosen your " + getPrintRank(gapNum) + ", you can not leave any gap between your chosen majors"
+        } else {
+            const currentDate = new Date();
+            const options = {
+                year: 'numeric',
+                month: 'numeric',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false,
+            };
+
+            // Format the current date and time
+            const formattedDate = currentDate.toLocaleString(undefined, options);;
+            lastChangedTimeElement.textContent =  `You have successfully submitted your application at time ${formattedDate}`
+        }
+    }
+
+    engButton.addEventListener('click', function () {
+        handleButtonClick(engForm);
+    });
+
+    sciButton.addEventListener('click', function () {
+        handleButtonClick(sciForm);
+    });
+
+    intButton.addEventListener('click', function () {
+        handleButtonClick(intForm);
+    });
+</script>
+
+</html>

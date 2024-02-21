@@ -1,0 +1,143 @@
+@charset "UTF-8";
+body {
+	width:100%;
+	padding:0px;
+	margin:0px; 
+	color: white;
+	background-color: #FF6200;
+	text-decoration: none !important;
+}
+.header{
+	display:block;
+	background-color: #FF6200;
+	text-align: center;
+	font-family: 'Georgia';;
+
+}
+.img_1{
+	
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.ct_head{
+	overflow:hidden;
+	background-color: #FF6200;
+	box-shadow: 4px 4px 4px 0px rgba(0,0,0,.2);
+	margin:0px;
+	padding:0px 10px;
+	
+}
+.header_right a{
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family:'Brush Script MT';;
+}
+
+.header_right a:hover {
+  background-color: #DB5400;
+  color: ghostwhite;
+}
+
+.header_right a.active {
+  background-color: #FF6200;
+  color: white;
+	
+}
+#welcome-block p{
+	display: block;
+	font-size: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 0px;
+	text-align: center;
+}
+
+
+.college-button-container{
+	display: flex;
+}
+
+.college-buttons {
+  display: inline-block;
+  border-collapse: collapse;
+  position: sticky;
+  margin-bottom: 300px;
+  width:30%	
+}
+
+.course-container{
+	width: 30%;
+	display: inline-block;
+}
+
+.course-container > img, label{
+	display: block;
+}
+
+.major-form{
+	display: none;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;	
+  background-color: #FF7200;
+  padding: 10px;
+  border: 1px solid white;
+	
+}
+
+.college-button {
+      display: block;
+	  border-collapse: collapse !important;
+      width: 100%;
+      background-color: #FF7200;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+	  color: white;
+	  border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;	
+}
+
+.college-button.clicked{
+	background-color: green;
+}
+
+table,th,td{
+	table-layout: fixed;
+    width: 500px;
+	border: 0px;
+	width:100%;
+}
+th{
+	background-color: #401100;
+}
+
+.ta tr:nth-child(even) {
+    background-color: #613700; /* Color for even rows */
+  }
+
+  .ta tr:nth-child(odd) {
+    background-color: #C44D00; /* Color for odd rows */
+  }
+.tr1{
+	background-color:#613700;
+}
+.tr2{
+	background-color:#C44D00;
+}
+footer{
+	display:block;
+	text-align: center;
+	box-shadow: 0px -4px 4px 0px rgba(0,0,0,.2);
+	font-family: 'Georgia';
+	color:white;
+	text-decoration: none;
+}
+.submit-msg{
+	display: flex;
+    justify-content: center;
+}

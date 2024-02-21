@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="visit.css">
+	<script src="https://personal.cs.cityu.edu.hk/~cs2204/2023/cw3cs2204.js"></script>
+</head>
+<body>
+	<div class="header">
+		<img src="../Image/logo.png" width="400" height="100" class="img_1">
+		<h1>Hong Kong Industrial University</h1>
+	</div>	
+<div class="ct_head">
+  <div class="header_right">
+			<a href="O_Welcome_page.html">Home</a>
+			<a href="O_About.html">About</a>
+			<a href="O_Apply_page.html">Apply</a>
+			<a href="O_Visit_page.html">Visit</a>			
+			<a href="O_Program_page.html">Program</a>					
+			<a href="O_Contact_page.html">Contact</a>
+		</div>
+	</div>
+	<div id="welcome">
+		<p>We warmly welcome you to visit us at our Kowloon campus and experience our
+		vibrant learning community. Our campus is located in the Hong Kong Kowloon
+		High-Tech Park, where we collaborate closely with institutes of the
+		Chinese Academy of Sciences.</p>
+		<p>During your visit, you can explore our world-class facilities, including
+		the Protein Folding Science Center, Hong Kong Advanced Computing
+		Equipment, Hong Kong Ultrafast Laser Facility, Hong Kong Electron-Positron
+		Collider, and Hong Kong Supercomputer Facility. These facilities are
+		available to our faculty, students, and researchers worldwide.</p>
+		<p>You will also have the chance to meet our renowned scholars and experts
+		from home and abroad committed to providing students with cutting-edge
+		knowledge and skills in their respective fields. Our faculty members are
+		recognized leaders in their fields, and their research has been published
+		in prestigious journals such as Cell, Nature, and Science.</p>
+		<p>We hope you will come and visit us soon to experience firsthand the
+		dynamic and innovative community at Hong Kong Industrial University.</p>
+	</div>
+	<div class="row">
+		<div class="content">
+			<img class="png2" src="../Image/location.jpg">
+		</div>
+		<div class="content">
+			<h3>Location</h3>
+			<p>Address: Tat Chee Avenue, Kowloon, Hong Kong SAR
+				<br><br>Tel: (852) 1234 5678
+				<br><br>Fax: (852) 8765 4321
+				<br><br>Email: visit@hkiu.edu.hk</p><br><br><br>
+		</div>
+	</div>
+	<div class="le">
+			<h3 class="word">Hong Kong Industrial University is having an open day on campus! Please make a reservation to visit our campus </h3>
+		<div id="kk">
+			<fieldset><legend>Booking information:</legend>
+			<form>
+				<label for="Date">Date:</label>
+				<input type="date" id="Date" name="Date"/><br>
+				<label for="Time">Time:</label>
+				<select name="Time" id="Time">
+					<option value="01:00">01:30-02:00PM</option>
+        			<option value="02:00">02:00-02:30PM</option>
+        			<option value="02:30">02:30-03:00PM</option>
+        			<option value="03:00">03:00-03:30PM</option>
+        			<option value="03:30">03:30-04:00PM</option>
+        			<option value="04:00">04:00-04:30PM</option>
+        			<option value="04:30">04:30-05:00PM</option>
+				</select><br>
+				<label for="NOV">No.of Visitors: :</label>
+				<input type="integer" id="NOV" name="NOV"/><br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<button>Check avalibility</button>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<button type="reset">Reset</button>
+			</form>
+			</fieldset>
+			<script>
+  function validateForm(event) {
+  	event.preventDefault(); 
+  	const errorMessages = document.querySelectorAll('.error-message');
+  	errorMessages.forEach(message => message.remove());
+  	const dateValue = document.getElementById('Date').value.trim();
+  	const timeValue = document.getElementById('Time').value.trim();
+  	const novValue = parseInt(document.getElementById('NOV').value);
+  		if (dateValue === '' || timeValue === '' || isNaN(novValue) || novValue < 1) {
+    		const errorMessage = document.createElement('p');
+    		errorMessage.textContent = 'Data not completed; please re-enter';
+    		errorMessage.style.color = 'red';
+    		errorMessage.classList.add('error-message');
+    		const formBox = document.getElementById('kk');
+    		formBox.insertBefore(errorMessage, formBox.children[Math.floor(formBox.children.length / 2)]);
+    	return;
+		}
+	const isReservationValid = reserve(dateValue, timeValue, novValue);
+	const messageElement = document.createElement('p')	
+	if (isReservationValid) {
+      alert("Your reservation is successful!");
+    } else {
+      alert("Sorry, the reservation is full!");
+    } 
+}
+				const form = document.querySelector('form');
+				form.addEventListener('submit', validateForm);
+</script>
+		</div>
+		<br><br>
+	</div>
+</body>	
+<footer>
+		<img src="../Image/footer_logo.png" width="300" height="100" >
+ 		<p>© CityU 2023 sources of images and text from Wikipedia Commons and Courtesy of Icon pack by Icons8 -- designed by <a href="O_design_page.html">LawYukMan</a></p>
+</footer>
+</html>
+
+
+
+
+

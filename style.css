@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* Add a black background color to the top navigation */
+@font-face {
+  font-family: "Volgian Demo";
+  src: url( "../Volgian Demo.ttf");
+}
+
+html, body, #page {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+	background-color: #FF6200;
+	font-family: "Volgian Demo";
+	font-weight: bold;
+}
+
+.nb {
+  background-color: #FF6200;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	
+}
+
+/* Style the links inside the navigation bar */
+.nb a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 28px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+/* Change the color of links on hover */
+.nb a:hover {
+  background-color: #FF6200;
+  color: #FF6200;
+}
+
+/* Add a color to the active/current link */
+.nb a.active {
+  background-color: #FF6200;
+  color: white;
+	
+}
